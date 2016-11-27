@@ -6,45 +6,11 @@
     Count down timer
   </title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    body {
-      margin: 0px;
-      width: 100vw;
-      height: 100vh;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    
-    .box {
-      margin: auto;
-      top: 50%;
-      position: relative;
-      transform: translateY(-50%);
-      -webkit-box-shadow: 1px 7px 70px -4px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 1px 7px 70px -4px rgba(0, 0, 0, 0.75);
-      box-shadow: 1px 7px 70px -4px rgba(0, 0, 0, 0.75);
-    }
-    
-    .padding2 {
-      padding: 2%;
-    }
-    
-    .button-margin {
-      margin-left: 17.5px;
-      margin-right: 17.5px;
-    }
-    
-    .time {
-      font-size: 50px;
-    }
-    
-    .inline-block {
-      display: inline-block;
-      vertical-align: top;
-    }
-  </style>
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+
   <div class="box padding2">
     <div class="timer">
       <div class="button">
@@ -62,10 +28,11 @@
       </div>
     </div>
     <div class="control">
-      <div class="start"></div>
-      <div class="stop"></div>
+      <div class="start inline-block button-margin"><i class="fa fa-play-circle fa-3x" aria-hidden="true"></i></div>
+      <div class="stop inline-block button-margin"><i class="fa fa-stop-circle fa-3x" aria-hidden="true"></i></div>
     </div>
   </div>
 </body>
-
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="./main.js"></script>
 </html>
